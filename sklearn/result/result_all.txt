@@ -1,0 +1,209 @@
+baseline:
+1. RandomForestClassifier(n_estimators=200)
+
+	Accuracy : 0.9387
+
+	              precision    recall  f1-score   support
+
+	          0       0.95      0.97      0.96     94320
+	          1       0.91      0.85      0.88     31123
+	          2       0.80      0.47      0.60       949
+
+	avg / total       0.94      0.94      0.94    126392
+
+	confusion_matrix:
+	 [[91637  2597    86]
+	 [ 4540 26559    24]
+	 [  433    66   450]]
+
+	Feature importances: [0.11952883 0.11596175 0.0982851  0.10590004 0.05639685 0.05342414 0.15161803 0.2616377  0.03724755]
+
+
+
+
+2. ExtraTreesClassifier(n_estimators=100, max_depth=None,min_samples_split=2, random_state=0)
+
+	Accuracy : 0.9385
+
+	              precision    recall  f1-score   support
+
+	          0       0.95      0.97      0.96     94320
+	          1       0.91      0.85      0.88     31123
+	          2       0.79      0.47      0.59       949
+
+	avg / total       0.94      0.94      0.94    126392
+
+	confusion_matrix:
+	 [[91691  2531    98]
+	 [ 4656 26450    17]
+	 [  455    52   442]]
+
+	Feature importances: [0.08833416 0.09407398 0.07866561 0.14090152 0.05902382 0.0658331 0.14927578 0.2602304  0.06366162]
+
+
+
+
+3. DecisionTreeClassifier()
+
+	Accuracy : 0.9337
+
+	              precision    recall  f1-score   support
+
+	          0       0.95      0.97      0.96     94320
+	          1       0.90      0.85      0.87     31123
+	          2       0.66      0.52      0.58       949
+
+	avg / total       0.93      0.93      0.93    126392
+
+	confusion_matrix:
+	 [[91167  2938   215]
+	 [ 4726 26355    42]
+	 [  393    63   493]]
+
+	Feature importances: [0.09380368 0.12045689 0.17986433 0.08700635 0.08335673 0.04127122 0.15525286 0.2266318  0.01235615]
+
+
+
+
+GradientBoostingClassifier(init=None,n_estimators=1000,learning_rate=0.1, subsample=0.8,loss='deviance',max_features='sqrt',criterion='friedman_mse',min_samples_split =1200, min_impurity_split=None,min_impurity_decrease=0.0,max_depth=7,max_leaf_nodes=None,min_samples_leaf =60, warm_start=False,random_state=10)
+
+Accuracy : 0.9301
+
+              precision    recall  f1-score   support
+
+          0       0.94      0.97      0.95     94320
+          1       0.90      0.82      0.86     31123
+          2       0.87      0.46      0.60       949
+
+avg / total       0.93      0.93      0.93    126392
+
+confusion_matrix:
+ [[91481  2798    41]
+ [ 5457 25643    23]
+ [  459    54   436]]
+Feature importances: [0.13655952 0.1701796  0.0287975  0.10915345 0.02149995 0.10257301 0.1878628  0.22804804 0.01532612]
+
+
+
+GradientBoostingRegressor(init=None,n_estimators=1000,learning_rate=0.1, subsample=0.8,loss='ls',max_features='sqrt',criterion='friedman_mse',min_samples_split =1200, min_impurity_split=None,min_impurity_decrease=0.0,max_depth=7,max_leaf_nodes=None,min_samples_leaf =60, warm_start=False,random_state=10)
+
+Accuracy : 0.672
+
+Feature importances: [0.12663185 0.17698147 0.02696127 0.11925397 0.02674162 0.11113113 0.15146294 0.25086358 0.00997217]
+
+0.06823430422594565
+
+
+
+
+SVC()
+
+Accuracy : 0.8376
+
+              precision    recall  f1-score   support
+
+          0       0.85      0.95      0.90     94320
+          1       0.76      0.53      0.62     31123
+          2       0.97      0.03      0.07       949
+
+avg / total       0.83      0.84      0.82    126392
+
+confusion_matrix:
+ [[89378  4942     0]
+ [14672 16450     1]
+ [  576   341    32]]
+
+Feature importances: [0.135 0.125 0.06  0.125 0.006 0.088 0.12  0.325 0.016]
+
+
+
+
+
+AdaBoostClassifier(n_estimators=1000)
+
+	Accuracy : 0.8365
+
+	              precision    recall  f1-score   support
+
+	          0       0.85      0.95      0.90     94320
+	          1       0.76      0.51      0.61     31123
+	          2       0.55      0.01      0.01       949
+
+	avg / total       0.83      0.84      0.82    126392
+
+	confusion_matrix:
+	 [[89710  4609     1]
+	 [15105 16014     4]
+	 [  572   371     6]]
+
+	Feature importances: [0.13  0.13  0.06  0.105 0.007 0.096 0.124 0.33  0.018]
+
+
+
+
+4. KNeighborsClassifier()
+
+	Accuracy : 0.8248
+
+	              precision    recall  f1-score   support
+
+	          0       0.95      0.81      0.88     94320
+	          1       0.64      0.88      0.74     31123
+	          2       0.14      0.43      0.21       949
+
+	avg / total       0.87      0.82      0.84    126392
+
+	confusion_matrix:
+	 [[76597 15433  2290]
+	 [ 3730 27250   143]
+	 [  325   220   404]]
+
+
+
+
+LogisticRegression()
+
+	Accuracy : 0.7508
+
+	              precision    recall  f1-score   support
+
+	          0       0.75      0.99      0.86     94320
+	          1       0.62      0.05      0.09     31123
+	          2       0.00      0.00      0.00       949
+
+	avg / total       0.72      0.75      0.66    126392
+
+	confusion_matrix:
+	 [[93468   833    19]
+	 [29690  1431     2]
+	 [  911    38     0]]
+
+
+
+
+4. GaussianNB()
+
+	Accuracy : 0.7265
+
+	              precision    recall  f1-score   support
+
+	          0       0.76      0.92      0.83     94320
+	          1       0.40      0.16      0.23     31123
+	          2       0.03      0.00      0.01       949
+
+	avg / total       0.67      0.73      0.68    126392
+
+	confusion_matrix:
+	 [[86789  7488    43]
+	 [26053  5029    41]
+	 [  829   117     3]]
+
+
+Xgboost()
+
+
+Lightgbm()
+
+
+gcforest()
+
